@@ -15,21 +15,36 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Luxury Wedding Template | Premium Next.js Frontend",
+  title: "Francis & Eleanor Wedding | #Fran-Ele-Union",
   description:
-    "A cinematic, luxury-style wedding website template inspired by modern editorial design and African wedding elegance.",
+    "Official wedding website for Francis and Eleanor. View ceremony details, RSVP interest, and celebrate #Fran-Ele-Union.",
   keywords: [
-    "wedding template",
-    "luxury wedding website",
-    "nigerian wedding",
-    "next.js wedding frontend",
-    "premium event website",
+    "Francis and Eleanor wedding",
+    "Fran-Ele-Union",
+    "wedding in Enugu",
+    "Nigerian wedding",
+    "wedding RSVP",
+    "wedding invitation",
   ],
+  category: "event",
+  applicationName: "Francis & Eleanor Wedding",
   openGraph: {
-    title: "Luxury Wedding Template",
+    title: "Francis & Eleanor Wedding",
     description:
-      "A high-end, cinematic wedding frontend template built with Next.js and Framer Motion.",
+      "Celebrate with Francis and Eleanor. RSVP interest and follow wedding updates for #Fran-Ele-Union.",
     type: "website",
+    siteName: "Francis & Eleanor Wedding",
+    locale: "en_NG",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Francis & Eleanor Wedding",
+    description:
+      "Celebrate with Francis and Eleanor. RSVP interest and follow wedding updates.",
+  },
+  icons: {
+    icon: [{ url: "/favicon.svg?v=2", type: "image/svg+xml" }],
+    shortcut: [{ url: "/favicon.svg?v=2", type: "image/svg+xml" }],
   },
 };
 
