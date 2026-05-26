@@ -1,0 +1,19 @@
+.lux-divider {
+  position: relative;
+}
+
+.lux-divider::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -1.5rem;
+  width: 120px;
+  height: 1px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(209, 168, 111, 0.7),
+    transparent
+  );
+}

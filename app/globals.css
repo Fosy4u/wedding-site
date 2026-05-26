@@ -1,26 +1,76 @@
 @import "tailwindcss";
+@import "../styles/effects.css";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-champagne: #f3e6d2;
+  --color-ivory: #fdf9f2;
+  --color-soft-gold: #d1a86f;
+  --color-muted-beige: #ddd0bc;
+  --color-muted-green: #2d4a3d;
+  --color-olive: #556b2f;
+  --color-burgundy: #6f1d35;
+  --color-burgundy-2: #5b172c;
+  --color-warm-black: #1a1714;
+  --background: var(--color-ivory);
+  --foreground: var(--color-warm-black);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-body);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  border-color: rgba(209, 168, 111, 0.25);
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), sans-serif;
+  line-height: 1.5;
+  text-rendering: geometricPrecision;
+  background-image: radial-gradient(
+    circle at top,
+    rgba(209, 168, 111, 0.12),
+    transparent 45%
+  );
+}
+
+.font-heading {
+  font-family: var(--font-heading), serif;
+}
+
+.section-shell {
+  margin-inline: auto;
+  width: min(1120px, 92%);
+}
+
+section[id] {
+  scroll-margin-top: 7.5rem;
+}
+
+::selection {
+  background: rgba(111, 29, 53, 0.24);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.floating-soft {
+  animation: float 7s ease-in-out infinite;
+}
+
+@media (max-width: 1023px) {
+  * {
+    cursor: auto !important;
+  }
 }
