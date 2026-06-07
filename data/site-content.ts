@@ -23,7 +23,7 @@ export const about = {
   groom: {
     name: "Francis Chisom Ogwudu",
     title: "The Groom",
-    bio: "A calm medical radiographer from Enugu, currently working at Princess Diane Hospital, United Kingdom. Francis leads with kindness, loves deeply, and brings joy and steadiness to everyone around him.",
+    bio: "A calm medical radiographer from Enugu, currently practicing in the United Kingdom. Francis leads with kindness, loves deeply, and brings joy and steadiness to everyone around him.",
     hobbies: ["Games", "Football", "Sunday jollof experiments"],
     image: "/images/groom-1.jpg",
   },
@@ -75,7 +75,7 @@ export const loveLetters = {
     ],
   },
   herInk: {
-    title: "❤ THE CAPTURE ❤",
+    title: "❤ HER INK ✍🏾 ❤",
     subtitle: "How the quiet one became my favorite person 🥰",
     paragraphs: [
       "Back in school, my first impression of him was, that guy who keeps to himself 🙄. I had no idea he was on his way to becoming my favorite person 🥰.",
@@ -94,7 +94,7 @@ export const weddingDetails = [
   },
   {
     label: "Reservation",
-    value: "Oaksvale Home, Enugu State",
+    value: "To be confirmed with RSVP",
   },
   {
     label: "Time",
@@ -197,7 +197,6 @@ export const bridalParty = {
 } as const;
 
 export const galleryImages = [
-  "/images/groom-bride-1.jpg",
   "/images/groom-bride-2.jpg",
   "/images/groom-bride-4.jpg",
   "/images/groom-2.jpg",
@@ -238,11 +237,7 @@ export const faqItems = [
     answer:
       "We love your little ones. However, due to venue capacity, this is an adults-only celebration unless noted on your invite.",
   },
-  {
-    question: "Is transportation available?",
-    answer:
-      "Yes. Transportation available from church to reception venue. Full schedule comes after RSVP.",
-  },
+
   {
     question: "What time should I arrive?",
     answer:
