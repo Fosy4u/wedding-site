@@ -1,7 +1,7 @@
 "use client";
 
 import { Music2, Pause } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 const START_OFFSET_SECONDS = 25;
 
@@ -10,8 +10,9 @@ export function MusicToggle() {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const hasAppliedStartOffsetRef = useRef(false);
   const hasUserPausedRef = useRef(false);
+  const hasAutoStartedAfterInteractionRef = useRef(false);
 
-  const applyStartOffset = () => {
+  const applyStartOffset = useCallback(() => {
     const audio = audioRef.current;
 
     if (!audio || hasAppliedStartOffsetRef.current) {
@@ -36,9 +37,9 @@ export function MusicToggle() {
       },
       { once: true },
     );
-  };
+  }, []);
 
-  const startPlayback = () => {
+  const startPlayback = useCallback(() => {
     const audio = audioRef.current;
 
     if (!audio || hasUserPausedRef.current) {
@@ -46,10 +47,10 @@ export function MusicToggle() {
     }
 
     applyStartOffset();
-    audio.play().catch(() => {
-      // Autoplay may be blocked until user interaction.
+    audio.play().catch((error) => {
+      console.warn("Background audio play() was blocked:", error);
     });
-  };
+  }, [applyStartOffset]);
 
   const pausePlayback = () => {
     const audio = audioRef.current;
@@ -96,6 +97,34 @@ export function MusicToggle() {
     startPlayback();
   };
 
+  useEffect(() => {
+    const handleFirstInteraction = () => {
+      if (
+        hasAutoStartedAfterInteractionRef.current ||
+        hasUserPausedRef.current
+      ) {
+        return;
+      }
+
+      hasAutoStartedAfterInteractionRef.current = true;
+      startPlayback();
+    };
+
+    window.addEventListener("pointerdown", handleFirstInteraction, {
+      passive: true,
+    });
+    window.addEventListener("keydown", handleFirstInteraction);
+    window.addEventListener("touchstart", handleFirstInteraction, {
+      passive: true,
+    });
+
+    return () => {
+      window.removeEventListener("pointerdown", handleFirstInteraction);
+      window.removeEventListener("keydown", handleFirstInteraction);
+      window.removeEventListener("touchstart", handleFirstInteraction);
+    };
+  }, [startPlayback]);
+
   return (
     <button
       type="button"
@@ -105,7 +134,7 @@ export function MusicToggle() {
       aria-pressed={isPlaying}
     >
       {isPlaying ? <Pause size={14} /> : <Music2 size={14} />}
-      {isPlaying ? "Pause mood" : "Play mood"}
+      {isPlaying ? "Pause Our Song" : "Play Our Song"}
     </button>
   );
 }

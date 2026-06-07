@@ -1,9 +1,9 @@
 export const weddingInfo = {
-  couple: "Francis & Eleanor",
-  initials: "F&E",
+  couple: "Eleanor & Francis",
+  initials: "E&F",
   dateText: "Saturday, 25 July 2026",
   dateISO: "2026-07-25T11:00:00+01:00",
-  hashtag: "#Fran-Ele-Union",
+  hashtag: "#EndearedForever",
   heroImageMobile: "/images/groom-bride-1.jpg",
   heroImageDesktop: "/images/groom-bride-1-desktop.png",
   // heroImageDesktop:
@@ -17,9 +17,8 @@ export const about = {
     name: "Eleanor Chinonyerem Ewurum",
     title: "The Bride",
     bio: "A dedicated medical professional from Imo with a compassionate heart and calm strength. Eleanor brings warmth to every room and turns everyday moments into meaningful memories.",
-    hobbies: ["Poetry", "Interior styling", "Amapiano dance nights"],
-    image:
-      "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=1000&q=80",
+    hobbies: ["Travel", "Late Night Movies", "Dancing"],
+    image: "/images/bride-1.jpg",
   },
   groom: {
     name: "Francis Chisom Ogwudu",
@@ -35,31 +34,31 @@ export const storyTimeline = [
     title: "University Paths Crossed",
     date: "Campus Years",
     description:
-      "We first knew of each other at university through mutual friends. It was mostly passing greetings, but even then something memorable lingered.",
+      "They first knew of each other at university through mutual friends. It was mostly passing greetings, but even then something memorable lingered.",
   },
   {
     title: "A Reunion at the Hospital",
     date: "2022",
     description:
-      "After graduation, life brought us together again at the hospital through a mutual friend. What looked like a random visit became a quiet turning point.",
+      "After graduation, life brought them together again at the hospital through a mutual friend. What looked like a random visit became a quiet turning point.",
   },
   {
     title: "The Birthday Prank Call",
     date: "2022",
     description:
-      "On his birthday, she called from a strange number pretending to be a radio host. That playful moment opened the door to deeper conversations and connection for us.",
+      "On his birthday, she called from a strange number pretending to be a radio host. That playful moment opened the door to deeper conversations and connection for them.",
   },
   {
     title: "From Friendship to Love",
     date: "2024",
     description:
-      "He asked her out, she made him wait, then said yes. Late-night calls, laughter, patience, and trust slowly turned our friendship into a steady, joyful love.",
+      "He asked her out, she made him wait, then said yes. Late-night calls, laughter, patience, and trust slowly turned their friendship into a steady, joyful love.",
   },
   {
     title: "Chosen Forever",
     date: "The Yes That Changed Everything",
     description:
-      "About a year later, he asked to do life with her. Her answer is what brought us to this page and to this celebration of love, family, and faith.",
+      "About a year later, he asked to do life with her. Her answer is what brought them to this page and to this celebration of love, family, and faith.",
   },
 ] as const;
 
@@ -94,12 +93,12 @@ export const weddingDetails = [
     value: "Holy Trinity Catholic Church, Enugu State",
   },
   {
-    label: "Reception Venue",
-    value: "To be shared with invited guests closer to the date (Enugu State).",
+    label: "Reservation",
+    value: "Oaksvale Home, Enugu State",
   },
   {
     label: "Time",
-    value: "11:00 AM Ceremony | 4:00 PM Reception",
+    value: "2:00 PM Ceremony",
   },
   {
     label: "Dress Code",
@@ -115,61 +114,94 @@ export const weddingDetails = [
 export const bridalParty = {
   bridesmaids: [
     {
-      name: "Nkechi Obi",
+      name: "Myra",
       role: "Chief Bridesmaid",
-      image:
-        "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=900&q=80",
+      image: "/images/myra.jpg",
       highlighted: true,
     },
     {
-      name: "Ifeoma Adeyemi",
+      name: "Thelma",
       role: "Bridesmaid",
-      image:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=900&q=80",
+      image: "/images/thelma.jpg",
       highlighted: false,
     },
     {
-      name: "Temilade Afolayan",
+      name: "Amara",
       role: "Bridesmaid",
-      image:
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80",
+      image: "/images/amara.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Ginika",
+      role: "Bridesmaid",
+      image: "/images/ginika.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Yhucee",
+      role: "Bridesmaid",
+      image: "/images/yhucee.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Oge",
+      role: "Bridesmaid",
+      image: "/images/oge.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Amy",
+      role: "Bridesmaid",
+      image: "/images/amy.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Ruth",
+      role: "Bridesmaid",
+      image: "/images/ruth.jpg",
       highlighted: false,
     },
   ],
   groomsmen: [
     {
-      name: "Emeka Nnaji",
+      name: "Chubby",
       role: "Best Man",
-      image:
-        "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=900&q=80",
+      image: "/images/chubby.jpg",
       highlighted: true,
     },
     {
-      name: "Ayo Odukoya",
+      name: "Chibuike",
       role: "Groomsman",
-      image:
-        "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80",
+      image: "/images/chibuike.jpg",
       highlighted: false,
     },
     {
-      name: "Kenechukwu Umeh",
+      name: "Princewill",
       role: "Groomsman",
-      image:
-        "https://images.unsplash.com/photo-1504257432389-52343af06ae3?auto=format&fit=crop&w=900&q=80",
+      image: "/images/princewill.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Harry",
+      role: "Groomsman",
+      image: "/images/harry.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Dab",
+      role: "Groomsman",
+      image: "/images/dab.jpg",
       highlighted: false,
     },
   ],
 } as const;
 
 export const galleryImages = [
-  "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1525258946800-98cfd641d0de?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1520854221256-17451cc331bf?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1478146896981-b80fe463b330?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1200&q=80",
-  "https://images.unsplash.com/photo-1519223400710-8adf4b67d32a?auto=format&fit=crop&w=1200&q=80",
+  "/images/groom-bride-1.jpg",
+  "/images/groom-bride-2.jpg",
+  "/images/groom-bride-4.jpg",
+  "/images/groom-2.jpg",
+  "/images/groom-bride-3.jpg",
 ] as const;
 
 export const registryLinks = [
@@ -209,7 +241,7 @@ export const faqItems = [
   {
     question: "Is transportation available?",
     answer:
-      "Yes. Shuttles will run between selected partner hotels and the venue. Full schedule comes after RSVP.",
+      "Yes. Transportation available from church to reception venue. Full schedule comes after RSVP.",
   },
   {
     question: "What time should I arrive?",

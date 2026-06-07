@@ -22,7 +22,7 @@ export function ProfileCard({
       transition={{ duration: 0.25 }}
       className="group overflow-hidden rounded-3xl border border-[var(--color-soft-gold)]/25 bg-white"
     >
-      <div className="relative h-72 overflow-hidden">
+      <div className="relative h-100 overflow-hidden">
         {/* TODO: Replace with real bridal party portraits. */}
         <Image
           src={image}

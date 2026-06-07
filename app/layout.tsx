@@ -15,32 +15,32 @@ const manrope = Manrope({
 });
 
 export const metadata: Metadata = {
-  title: "Francis & Eleanor Wedding | #Fran-Ele-Union",
+  title: "Eleanor & Francis Wedding | #EndearedForever",
   description:
-    "Official wedding website for Francis and Eleanor. View ceremony details, RSVP interest, and celebrate #Fran-Ele-Union.",
+    "Official wedding website for Eleanor and Francis. View ceremony details, RSVP interest, and celebrate #EndearedForever.",
   keywords: [
-    "Francis and Eleanor wedding",
-    "Fran-Ele-Union",
+    "Eleanor and Francis wedding",
+    "EndearedForever",
     "wedding in Enugu",
     "Nigerian wedding",
     "wedding RSVP",
     "wedding invitation",
   ],
   category: "event",
-  applicationName: "Francis & Eleanor Wedding",
+  applicationName: "Eleanor & Francis Wedding",
   openGraph: {
-    title: "Francis & Eleanor Wedding",
+    title: "Eleanor & Francis Wedding",
     description:
-      "Celebrate with Francis and Eleanor. RSVP interest and follow wedding updates for #Fran-Ele-Union.",
+      "Celebrate with Eleanor and Francis. RSVP interest and follow wedding updates for #EndearedForever.",
     type: "website",
-    siteName: "Francis & Eleanor Wedding",
+    siteName: "Eleanor & Francis Wedding",
     locale: "en_NG",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Francis & Eleanor Wedding",
+    title: "Eleanor & Francis Wedding",
     description:
-      "Celebrate with Francis and Eleanor. RSVP interest and follow wedding updates.",
+      "Celebrate with Eleanor and Francis. RSVP interest and follow wedding updates.",
   },
   icons: {
     icon: [{ url: "/favicon.svg?v=2", type: "image/svg+xml" }],
