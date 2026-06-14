@@ -130,6 +130,18 @@ export const bridalParty = {
       highlighted: false,
     },
     {
+      name: "Amy",
+      role: "Bridesmaid",
+      image: "/images/Amy.jpg",
+      highlighted: false,
+    },
+    {
+      name: "Ruth",
+      role: "Bridesmaid",
+      image: "/images/Ruth.jpg",
+      highlighted: false,
+    },
+    {
       name: "Amara",
       role: "Bridesmaid",
       image: "/images/Amara.jpg",
@@ -151,18 +163,6 @@ export const bridalParty = {
       name: "Oge",
       role: "Bridesmaid",
       image: "/images/Oge.jpg",
-      highlighted: false,
-    },
-    {
-      name: "Amy",
-      role: "Bridesmaid",
-      image: "/images/Amy.jpg",
-      highlighted: false,
-    },
-    {
-      name: "Ruth",
-      role: "Bridesmaid",
-      image: "/images/Ruth.jpg",
       highlighted: false,
     },
   ],

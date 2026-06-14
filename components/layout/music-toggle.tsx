@@ -98,11 +98,21 @@ export function MusicToggle() {
   };
 
   useEffect(() => {
+    const removeFirstInteractionListeners = () => {
+      window.removeEventListener("pointerdown", handleFirstInteraction);
+      window.removeEventListener("keydown", handleFirstInteraction);
+      window.removeEventListener("touchstart", handleFirstInteraction);
+      window.removeEventListener("wheel", handleFirstInteraction);
+    };
+
     const handleFirstInteraction = () => {
-      if (
-        hasAutoStartedAfterInteractionRef.current ||
-        hasUserPausedRef.current
-      ) {
+      if (hasAutoStartedAfterInteractionRef.current) {
+        return;
+      }
+
+      removeFirstInteractionListeners();
+
+      if (hasUserPausedRef.current) {
         return;
       }
 
@@ -117,11 +127,12 @@ export function MusicToggle() {
     window.addEventListener("touchstart", handleFirstInteraction, {
       passive: true,
     });
+    window.addEventListener("wheel", handleFirstInteraction, {
+      passive: true,
+    });
 
     return () => {
-      window.removeEventListener("pointerdown", handleFirstInteraction);
-      window.removeEventListener("keydown", handleFirstInteraction);
-      window.removeEventListener("touchstart", handleFirstInteraction);
+      removeFirstInteractionListeners();
     };
   }, [startPlayback]);
 
