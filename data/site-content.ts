@@ -18,7 +18,7 @@ export const about = {
     title: "The Bride",
     bio: "A dedicated medical professional from Imo with a compassionate heart and calm strength. Eleanor brings warmth to every room and turns everyday moments into meaningful memories.",
     hobbies: ["Travel", "Late Night Movies", "Dancing"],
-    image: "/images/bride-1.jpg",
+    image: "/images/bride-main.jpg",
   },
   groom: {
     name: "Francis Chisom Ogwudu",
@@ -97,8 +97,12 @@ export const weddingDetails = [
     value: "To be confirmed with RSVP",
   },
   {
-    label: "Time",
-    value: "2:00 PM Ceremony",
+    label: "Church Ceremony Time",
+    value: "12:00 PM",
+  },
+  {
+    label: "Reception Ceremony Time",
+    value: "2:00 PM",
   },
   {
     label: "Dress Code",
@@ -200,6 +204,7 @@ export const galleryImages = [
   "/images/groom-bride-2.jpg",
   "/images/groom-bride-4.jpg",
   "/images/groom-2.jpg",
+  "/images/bride-3.jpg",
   "/images/groom-bride-3.jpg",
 ] as const;
 
@@ -246,6 +251,6 @@ export const faqItems = [
   {
     question: "Where should out-of-town guests stay?",
     answer:
-      "We arranged discounted rates at partner hotels in Victoria Island and Ikoyi. Details are sent by email after RSVP.",
+      "You will be communicated any arrangements upon RSVP confirmation. ",
   },
 ] as const;

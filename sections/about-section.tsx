@@ -21,7 +21,7 @@ function PersonCard({
 }) {
   return (
     <GlassCard className="bg-[var(--color-ivory)]/70">
-      <div className="relative mb-5 h-[440px] overflow-hidden rounded-2xl">
+      <div className="relative mb-5 h-[440px] md:h-[560px] overflow-hidden rounded-2xl">
         {/* TODO: Replace with personal portrait image. */}
         <Image src={image} alt={name} fill className="object-cover" />
       </div>
